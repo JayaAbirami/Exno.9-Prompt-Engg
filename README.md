@@ -121,30 +121,217 @@ All outputs were saved, timestamped, and labeled. A comparison matrix was create
 
 ---
 
-## Solution:
+1.prompt Complexity Spectrum
 
-- AI models like Runway Gen-2 and Synthesia offer powerful capabilities for text-to-video generation, each with unique strengths.
-- Simple prompts yield general actions but lack richness.
-- Detailed prompts allow for greater creative control and realism.
-- Adding time, camera motion, and environmental context significantly enhances video quality.
-- Iterating and varying prompts is essential for exploring style and storytelling.
+Level 1: Basic Prompts (Minimal Guidance)
 
----
+Structure:
 
-## output:
-### Text:
-On a quiet hilltop, an old clockmaker built a tiny workshop filled with ticking wonders. One day, he discovered a broken watch that could pause time for exactly one minute. Curious and cautious, he used it to rescue a falling bird midair. Word of his strange power spread, but he chose to live in silence, fixing time for others—never for himself.
-### video:
-https://drive.google.com/file/d/1LQfRXc9-2NARle-k-aGY5zG60eHv_QEH/view?usp=sharing
+"Generate a video of a cat playing in a garden"
 
-## Result:  
-The prompt-based video generation task was completed successfully. Various prompting techniques were explored and applied using tools like Runway Gen-2 and Synthesia. It was observed that more specific and well-structured prompts resulted in higher quality and more contextually accurate videos.
+Output Characteristics:
 
----
+- Generic content
 
-## References:
+- Default style/lighting
 
-- [Runway Gen-2](https://research.runwayml.com/gen2)
-- [Synthesia.io](https://www.synthesia.io/)
+- Short duration (2-4 sec)
+
+- Limited camera movement
+
+Level 2: Structured Prompts (Scene Description)
+
+Structure:
+
+"Create a 10-second video of:
+Subject: A gray tabby cat
+Action: Chasing a red butterfly
+Environment: Sunlit flower garden at golden hour
+Style: Cinematic close-ups with shallow depth of field"
+
+Output Improvements:
+
+- Specific subject details
+
+- controlled environment
+
+- Intentional visual style
+
+- Better temporal coherence
+
+Level 3: Advanced Prompts (Directorial Control)
+
+Structure:
+
+"Generate a 30-second animated sequence:
+
+Scene 1 (0-10s): Wide shot of cyberpunk city at night, neon lights reflecting on wet pavement
+Transition: Quick zoom to...
+
+Scene 2 (10-20s): Close-up of android's face as eyes glow blue
+
+Camera: Dutch angle with slow dolly movement
+
+Style: Blade Runner aesthetic with cinematic color grading
+
+FPS: 24 for filmic look"
+
+Output Enhancements:
+
+- Precise shot composition
+
+- Controlled pacing
+
+- Consistent art direction
+
+- Professional cinematography elements
+
+2. Key Prompting Techniques
+ 
+A. Temporal Chunking
+
+Break videos into sequential segments:
+
+"Create a 15-second product demo: 
+
+1. 0-5s: Wide shot showing product in context
+   
+2. 5-10s: Close-up highlighting key features
+    
+3. 10-15s: Text overlay with value proposition"
+   
+B. Style Anchoring
+
+Reference known media properties:
+
+"Generate in the style of Studio Ghibli: 
+
+- Hand-painted watercolor backgrounds
+  
+- Character designs with soft edges
+   
+- Gentle camera movements
+   
+- Pastel color palette"
+
+C. Motion Specification
+
+Control movement dynamics:
+
+"Camera: Slow 360° orbit around subject 
+
+Subject motion: Hair blowing in wind (speed: gentle breeze) 
+
+Background: Time-lapse clouds moving left-to-right"
+
+D. Negative Prompting
+
+Exclude unwanted elements:
+
+"Exclude:  
+
+- Watermarks
+   
+- Low-resolution frames
+   
+- Uncanny valley effects
+   
+- Jittery camera movements"
+
+3. Python Implementation Example
+
+<img width="694" height="573" alt="image" src="https://github.com/user-attachments/assets/f3fc4411-3737-4d32-a30b-87623ef07f2a" />
+<img width="670" height="488" alt="image" src="https://github.com/user-attachments/assets/2b7008a9-ce10-4fcf-a82d-e921c84201d0" />
+
+4. Prompt Engineering Best Practices
+   
+The 5 W Framework:
+
+- Who/What: Clear subject specification
+
+- Where: Environmental context
+
+- When: Temporal setting
+
+- Why: Purpose/goal of the video
+
+Technical Parameters:
+
+<img width="515" height="206" alt="image" src="https://github.com/user-attachments/assets/f6b06c9c-ad72-40ee-ab72-994aaf9b6c92" />
+
+
+Reference Embedding
+
+"Visual composition similar to <reference_image.jpg> but with:
+
+- Cooler color temperature
+ 
+- More dynamic camera angles
+   
+- Added futuristic HUD elements"
+
+Iterative Refinement:
+
+"Based on output #1 (attached): 
+
+1. Maintain the excellent lighting
+ 
+2. Increase character detail by 30%
+
+3. Smooth the walking animation
+   
+4. Add falling cherry blossom petals"
+
+
+5. Comparative Results Analysis
+
+<img width="690" height="256" alt="image" src="https://github.com/user-attachments/assets/d855fd3f-013c-4137-8665-fbca6cf2833d" />
+
+6. Emerging Techniques
+   
+A. Multi-Modal Prompting
+
+Combine:
+
+1.Text description (this prompt)
+
+2.Style reference images (3 samples)
+
+3.Audio track (for timing/mood)
+
+4.Motion capture data (for animations)
+
+B. Interactive Generation
+
+<img width="485" height="187" alt="image" src="https://github.com/user-attachments/assets/f6167bbf-2288-408a-aa05-3a4741f14c22" />
+
+    
+ C. Physics-Aware Prompting
+
+"Water simulation parameters: 
+
+- Surface tension: 0.072 N/m
+  
+- Viscosity: 0.89 mPa·s
+  
+- Splash particle count: 500-700
+  
+- Render: Photorealistic fluid dynamics"
+  
+Prompt For Video Generation
+
+Create a 30-second advertisement video for Cetaphil Face Wash featuring only male characters,
+targeting young men with sensitive or acne-prone skin. Start with a close-up of a young man looking at his irritated
+skin in the mirror. Show him applying Cetaphil Face Wash with a smooth lather, followed by water rinsing off easily.
+Include visuals of calming ingredients like aloe vera and water splashes. Show his skin
+visibly clearer and healthier after use. End with him confidently stepping out, smiling. Voiceover:
+‘Real care for real skin. Cetaphil – gentle, effective, and made for men.’ Include soft, modern background
+music and display the Cetaphil logo at the end.
+
+
+Result:
+
+The Prompt of the above task executed successfully
+thesia.io](https://www.synthesia.io/)
 - [Pictory.ai](https://pictory.ai/)
 - [DeepBrain.io](https://www.deepbrain.io/)
