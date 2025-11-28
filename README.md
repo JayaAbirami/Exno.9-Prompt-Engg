@@ -108,230 +108,61 @@ These generated different visual pacing and effects, useful for creative directi
 All outputs were saved, timestamped, and labeled. A comparison matrix was created to analyze differences in lighting, movement, and realism.
 
 ---
+### Concept Title:
+🎃 Concept Title:“Algorithmic Arboretum — Exploring Prompting Techniques in Object Transformation using an Apple Base”
 
-## Sample Prompts Summary:
+### Core Video Concept (Use Case for Experiment):
+A simple, photorealistic red apple is used as the base object on a presentation slide. Over several seconds, the video demonstrates the apple transforming into different artistic and abstract styles based on the application of various prompting techniques (e.g., zero-shot, few-shot, chain-of-thought, role-based, or specific style prompts). The experiment visually showcases how different prompt styles fundamentally alter the texture, material, composition, and visual concept of the object while maintaining its core shape.
 
-| Prompt Type        | Example Prompt                                                                                         |
-|--------------------|--------------------------------------------------------------------------------------------------------|
-| Simple             | "A person walking in a park."                                                                          |
-| Descriptive        | "A person in a red jacket walking in a sunny park with birds flying and a dog running beside them."   |
-| Time/Motion-Based  | "Time-lapse of sunset over the ocean with camera zooming out slowly."                                  |
-| Stylized/Artistic  | "Animated scene of a futuristic city at night with neon lights and flying cars."                       |
-| Cinematic          | "A car chase in a neon-lit city with reflections on wet roads and camera panning."                    |
+### Master Prompt (for creating the video):
 
----
+You can use this with any image/video-generation AI model (Midjourney, DALL-E 3, Stable Diffusion, Ideogram, etc.)
 
-1.prompt Complexity Spectrum
+### ✅  Tool-Specific Prompts:
 
-Level 1: Basic Prompts (Minimal Guidance)
+#### ► Runway Gen-2 Prompt
+```
+“Transform this base street-walk clip into 4 styles: dreamy cinematic, cyberpunk-watercolor hybrid, stepwise evolving transformation, and sci-fi director’s reimagining.”
+```
+#### ► Pika Labs Prompt
+```
+“Take the original walking footage and generate four contrasting styles using zero-shot, few-shot references, step-by-step visual evolution, and director-style sci-fi action.”
+```
+#### ► Luma Dream Machine Prompt
+```
+“Recreate the same walking scene in cinematic, artistic hybrid, progressive transformation, and sci-fi director modes.”
+```
+#### ► Krea Video Prompt
+```
+“Apply four prompt methods—zero-shot, reference blending, chained transformation, and role-based directing—on the same simple walking clip.”
+```
+### 🎥 Main Prompt Text:
+```
+Zero-Shot Style: A simple, smooth, reflective chrome sphere sitting on the same table, perfectly capturing the light of the environment.
 
-Structure:
+Few-Shot/Referenced Style: The apple is transformed into a highly intricate, glass/crystal sphere with internal luminescence and complex refractive patterns, matching the style of a 'digital art installation.'
 
-"Generate a video of a cat playing in a garden"
+Chain-of-Thought/Step-wise Style: The apple undergoes a progressive deconstruction, transforming into a jagged, technological artifact made of shredded metallic paper and wires, scattering fragments on the surface.
 
-Output Characteristics:
+Role-Based/Abstract Style: The final state is an abstract, hyper-detailed, and organic mass of microscopic fibers and spores, following the style of a 'biopunk designer.' All transformations must maintain the original object's location and base lighting setup. The final output is a presentation slide showing the prompt text and the resulting image transformation.”
+```
+### Observation Table:
 
-- Generic content
+| Prompting Technique | Description of Output                         | Strengths                 | Weaknesses              |
+| ------------------- | --------------------------------------------- | ------------------------- | ----------------------- |
+| Zero-shot           | Basic transformation without examples         | Fast, simple              | Less controlled         |
+| Few-shot            | Style matches reference images/videos         | High accuracy, consistent | Needs reference data    |
+| Chain-of-thought    | Gradual evolution in steps                    | Detailed control          | Longer generation       |
+| Role-based          | Follows creative persona (director, animator) | Rich creativity           | Sometimes unpredictable |
 
-- Default style/lighting
+### Output:
+(Pika Labs)
 
-- Short duration (2-4 sec)
 
-- Limited camera movement
+https://github.com/user-attachments/assets/11b69c69-bede-4f26-b090-dc75314d5e02
 
-Level 2: Structured Prompts (Scene Description)
 
-Structure:
 
-"Create a 10-second video of:
-Subject: A gray tabby cat
-Action: Chasing a red butterfly
-Environment: Sunlit flower garden at golden hour
-Style: Cinematic close-ups with shallow depth of field"
+### Result: 
 
-Output Improvements:
-
-- Specific subject details
-
-- controlled environment
-
-- Intentional visual style
-
-- Better temporal coherence
-
-Level 3: Advanced Prompts (Directorial Control)
-
-Structure:
-
-"Generate a 30-second animated sequence:
-
-Scene 1 (0-10s): Wide shot of cyberpunk city at night, neon lights reflecting on wet pavement
-Transition: Quick zoom to...
-
-Scene 2 (10-20s): Close-up of android's face as eyes glow blue
-
-Camera: Dutch angle with slow dolly movement
-
-Style: Blade Runner aesthetic with cinematic color grading
-
-FPS: 24 for filmic look"
-
-Output Enhancements:
-
-- Precise shot composition
-
-- Controlled pacing
-
-- Consistent art direction
-
-- Professional cinematography elements
-
-2. Key Prompting Techniques
- 
-A. Temporal Chunking
-
-Break videos into sequential segments:
-
-"Create a 15-second product demo: 
-
-1. 0-5s: Wide shot showing product in context
-   
-2. 5-10s: Close-up highlighting key features
-    
-3. 10-15s: Text overlay with value proposition"
-   
-B. Style Anchoring
-
-Reference known media properties:
-
-"Generate in the style of Studio Ghibli: 
-
-- Hand-painted watercolor backgrounds
-  
-- Character designs with soft edges
-   
-- Gentle camera movements
-   
-- Pastel color palette"
-
-C. Motion Specification
-
-Control movement dynamics:
-
-"Camera: Slow 360° orbit around subject 
-
-Subject motion: Hair blowing in wind (speed: gentle breeze) 
-
-Background: Time-lapse clouds moving left-to-right"
-
-D. Negative Prompting
-
-Exclude unwanted elements:
-
-"Exclude:  
-
-- Watermarks
-   
-- Low-resolution frames
-   
-- Uncanny valley effects
-   
-- Jittery camera movements"
-
-3. Python Implementation Example
-
-<img width="694" height="573" alt="image" src="https://github.com/user-attachments/assets/f3fc4411-3737-4d32-a30b-87623ef07f2a" />
-<img width="670" height="488" alt="image" src="https://github.com/user-attachments/assets/2b7008a9-ce10-4fcf-a82d-e921c84201d0" />
-
-4. Prompt Engineering Best Practices
-   
-The 5 W Framework:
-
-- Who/What: Clear subject specification
-
-- Where: Environmental context
-
-- When: Temporal setting
-
-- Why: Purpose/goal of the video
-
-Technical Parameters:
-
-<img width="515" height="206" alt="image" src="https://github.com/user-attachments/assets/f6b06c9c-ad72-40ee-ab72-994aaf9b6c92" />
-
-
-Reference Embedding
-
-"Visual composition similar to <reference_image.jpg> but with:
-
-- Cooler color temperature
- 
-- More dynamic camera angles
-   
-- Added futuristic HUD elements"
-
-Iterative Refinement:
-
-"Based on output #1 (attached): 
-
-1. Maintain the excellent lighting
- 
-2. Increase character detail by 30%
-
-3. Smooth the walking animation
-   
-4. Add falling cherry blossom petals"
-
-
-5. Comparative Results Analysis
-
-<img width="690" height="256" alt="image" src="https://github.com/user-attachments/assets/d855fd3f-013c-4137-8665-fbca6cf2833d" />
-
-6. Emerging Techniques
-   
-A. Multi-Modal Prompting
-
-Combine:
-
-1.Text description (this prompt)
-
-2.Style reference images (3 samples)
-
-3.Audio track (for timing/mood)
-
-4.Motion capture data (for animations)
-
-B. Interactive Generation
-
-<img width="485" height="187" alt="image" src="https://github.com/user-attachments/assets/f6167bbf-2288-408a-aa05-3a4741f14c22" />
-
-    
- C. Physics-Aware Prompting
-
-"Water simulation parameters: 
-
-- Surface tension: 0.072 N/m
-  
-- Viscosity: 0.89 mPa·s
-  
-- Splash particle count: 500-700
-  
-- Render: Photorealistic fluid dynamics"
-  
-Prompt For Video Generation
-
-Create a 30-second advertisement video for Cetaphil Face Wash featuring only male characters,
-targeting young men with sensitive or acne-prone skin. Start with a close-up of a young man looking at his irritated
-skin in the mirror. Show him applying Cetaphil Face Wash with a smooth lather, followed by water rinsing off easily.
-Include visuals of calming ingredients like aloe vera and water splashes. Show his skin
-visibly clearer and healthier after use. End with him confidently stepping out, smiling. Voiceover:
-‘Real care for real skin. Cetaphil – gentle, effective, and made for men.’ Include soft, modern background
-music and display the Cetaphil logo at the end.
-
-
-Result:
-
-The Prompt of the above task executed successfully
-thesia.io](https://www.synthesia.io/)
-- [Pictory.ai](https://pictory.ai/)
-- [DeepBrain.io](https://www.deepbrain.io/)
+Different prompting techniques produced distinct video outputs even when using the same base scene. Zero-shot gave simple changes, few-shot provided style accuracy, chain-of-thought gave stepwise control, and role-based produced highly creative variations.
